@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/680/trunk/test/src/pl/otros/logview
+END
+TestUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/TestUtils.java
+END
+BufferingLogDataCollectorProxyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/672/trunk/test/src/pl/otros/logview/BufferingLogDataCollectorProxyTest.java
+END
+LogInvestiagionPersitanceUtilTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/678/trunk/test/src/pl/otros/logview/LogInvestiagionPersitanceUtilTest.java
+END

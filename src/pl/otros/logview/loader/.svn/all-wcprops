@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/668/trunk/src/pl/otros/logview/loader
+END
+AutomaticMarkerLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/loader/AutomaticMarkerLoader.java
+END
+BaseLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/loader/BaseLoader.java
+END
+LogFiltersLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/668/trunk/src/pl/otros/logview/loader/LogFiltersLoader.java
+END
+IconsLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/loader/IconsLoader.java
+END
+MessageColorizerLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/loader/MessageColorizerLoader.java
+END
+Path.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/loader/Path.java
+END
+LogImportersLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/loader/LogImportersLoader.java
+END
+LvDynamicLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/loader/LvDynamicLoader.java
+END

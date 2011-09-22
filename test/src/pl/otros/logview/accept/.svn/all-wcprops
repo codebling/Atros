@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/673/trunk/test/src/pl/otros/logview/accept
+END
+SelectedClassAcceptConditionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/670/trunk/test/src/pl/otros/logview/accept/SelectedClassAcceptConditionTest.java
+END
+LevelLowerAcceptContitionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/673/trunk/test/src/pl/otros/logview/accept/LevelLowerAcceptContitionTest.java
+END
+SelectedThreadAcceptConditionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/616/trunk/test/src/pl/otros/logview/accept/SelectedThreadAcceptConditionTest.java
+END
+SelectionAwareAcceptConditionTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/606/trunk/test/src/pl/otros/logview/accept/SelectionAwareAcceptConditionTestBase.java
+END
+HigherIdAcceptConditionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/accept/HigherIdAcceptConditionTest.java
+END
+SelectedRowsAcceptConditionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/616/trunk/test/src/pl/otros/logview/accept/SelectedRowsAcceptConditionTest.java
+END
+LowerIdAcceptConditionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/accept/LowerIdAcceptConditionTest.java
+END

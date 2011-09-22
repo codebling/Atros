@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/store
+END
+MemoryLogDataStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/store/MemoryLogDataStore.java
+END
+CachedLogStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/store/CachedLogStore.java
+END
+SynchronizedLogDataStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/store/SynchronizedLogDataStore.java
+END
+LogDataStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/store/LogDataStore.java
+END
+AbstractMemoryLogStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/store/AbstractMemoryLogStore.java
+END

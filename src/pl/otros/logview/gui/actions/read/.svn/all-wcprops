@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/676/trunk/src/pl/otros/logview/gui/actions/read
+END
+ImportLogActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/read/ImportLogActionListener.java
+END
+ProgressWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/read/ProgressWatcher.java
+END
+LogFileInNewTabOpener.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/651/trunk/src/pl/otros/logview/gui/actions/read/LogFileInNewTabOpener.java
+END
+ImportLogRunnable.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/676/trunk/src/pl/otros/logview/gui/actions/read/ImportLogRunnable.java
+END
+DragAndDropFilesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/read/DragAndDropFilesHandler.java
+END
+ImportLogWithGivenImporterActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/614/trunk/src/pl/otros/logview/gui/actions/read/ImportLogWithGivenImporterActionListener.java
+END
+ImportLogWithAutoDetectedImporterActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/read/ImportLogWithAutoDetectedImporterActionListener.java
+END
+ReadingStopperForRemove.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/read/ReadingStopperForRemove.java
+END
+AutoDetectingImporterProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/613/trunk/src/pl/otros/logview/gui/actions/read/AutoDetectingImporterProvider.java
+END
+LogImporterProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/613/trunk/src/pl/otros/logview/gui/actions/read/LogImporterProvider.java
+END

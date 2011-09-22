@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/672/trunk/src/pl/otros/logview/parser/log4j
+END
+Log4jPatternMultilineLogParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/log4j/Log4jPatternMultilineLogParser.java
+END
+Log4jPatternIsoDate5pTMNLogParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/log4j/Log4jPatternIsoDate5pTMNLogParser.java
+END
+Log4jUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/672/trunk/src/pl/otros/logview/parser/log4j/Log4jUtil.java
+END

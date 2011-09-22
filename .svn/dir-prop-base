@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 134
+lib
+files
+starter
+Test
+CodeFormatter.xml
+log-jul.txt
+log.txt
+logiIS.txt
+sprawdzanie poprwanosci pluginow.txt
+yourXML.xml
+yourXML2.xml
+
+END

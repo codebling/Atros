@@ -1,0 +1,20 @@
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+FINEST: Message in locales en_US 1
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+FINER: Message in locales en_US 2
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+FINE: Message in locales en_US 3 <?xml version="1.0"?><SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><!-- comment--><m:StockName>aaa</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope>
+Oct 9, 2010 12:46:34 PM log.test.LogTest main  
+CONFIG: Message in locales en_US 4 <?xml version="1.0"?><SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><!-- comment--><m:StockName>aaa</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope> aa  <?xml version="1.0"?><SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><!-- comment--><m:StockName>aaa</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope>
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+INFO: Message in locales en_US 5
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+INFO: Message in locales en_US 6
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+WARNING: Message in locales en_US 7
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+WARNING: Message in locales en_US 8 <?xml version="1.0"?><SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><m:StockName>aaa</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope> flasjfl sjafl sjafl jasl
+Oct 9, 2010 12:46:34 PM log.test.LogTest main
+SEVERE: Message in locales en_US 9 <?xml version="1.0"?><SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><m:StockName>1</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope> flasjfl sjafl sjafl jasl <?xml version="1.0"?><SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><m:StockName>2</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope> flasjfl sjafl sjafl jasl
+Oct 9, 2010 12:46:34 PM log.test.LogTest main 
+SEVERE: Message in locales en_US 10 <?xml version="1.0"?><SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><m:StockName>1</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope> flasjfl sjafl sjafl jasl<SoAp:Envelope xmlns:SoAp="http://schemas.xmlsoap.org/soap/envelope/"><SoAp:Header></SoAp:Header><SoAp:Body><m:GetStockPrice xmlns:m="http://www.example.org/stock"><m:StockName>2</m:StockName></m:GetStockPrice></SoAp:Body></SoAp:Envelope> flasjfl sjafl sjafl jasl

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/535/trunk/files/plugins/logimporters
+END
+log4j-1.pattern
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/525/trunk/files/plugins/logimporters/log4j-1.pattern
+END
+selenium.pattern
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/286/trunk/files/plugins/logimporters/selenium.pattern
+END

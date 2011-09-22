@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/611/trunk/src/pl/otros/logview/gui/message
+END
+SoapMessageColorizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/SoapMessageColorizer.java
+END
+MessageFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/MessageFormatter.java
+END
+SoapFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/SoapFinder.java
+END
+SoapMessageFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/SoapMessageFormatter.java
+END
+StackTraceFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/StackTraceFinder.java
+END
+SearchResultColorizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/SearchResultColorizer.java
+END
+StackTraceColorizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/StackTraceColorizer.java
+END
+MessageColorizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/MessageColorizer.java
+END
+SubText.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/SubText.java
+END
+MessageColorizerUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/message/MessageColorizerUtils.java
+END

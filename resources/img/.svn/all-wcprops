@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/653/trunk/resources/img
+END
+follow_off.png
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/129/trunk/resources/img/follow_off.png
+END
+.directory
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/132/trunk/resources/img/.directory
+END
+magnifier.png
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/102/trunk/resources/img/magnifier.png
+END
+follow.png
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/129/trunk/resources/img/follow.png
+END
+class.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/13/trunk/resources/img/class.png
+END
+play.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/132/trunk/resources/img/play.png
+END
+class_ignore.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/13/trunk/resources/img/class_ignore.png
+END
+package_open.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/13/trunk/resources/img/package_open.png
+END
+pause.png
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/132/trunk/resources/img/pause.png
+END
+package_open_ignore.png
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/13/trunk/resources/img/package_open_ignore.png
+END
+java.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/101/trunk/resources/img/java.png
+END
+note_exist.png
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/54/trunk/resources/img/note_exist.png
+END
+note_empty.png
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/54/trunk/resources/img/note_empty.png
+END
+package_closed.png
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/13/trunk/resources/img/package_closed.png
+END
+package_closed_ignore.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/13/trunk/resources/img/package_closed_ignore.png
+END
+icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/resources/img/icon.png
+END

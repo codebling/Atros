@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/actions
+END
+TailLogActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/669/trunk/src/pl/otros/logview/gui/actions/TailLogActionListener.java
+END
+SaveLogInvestigationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/SaveLogInvestigationAction.java
+END
+ShowLog4jPatternParserEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ShowLog4jPatternParserEditor.java
+END
+OpenLogInvestigationAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/OpenLogInvestigationAction.java
+END
+CloseAllTabsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/CloseAllTabsAction.java
+END
+AbstractActionWithConfirmation.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/AbstractActionWithConfirmation.java
+END
+ShowCallHierarhyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ShowCallHierarhyAction.java
+END
+EmptyIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/EmptyIcon.java
+END
+ExitAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ExitAction.java
+END
+ShowMarkersEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ShowMarkersEditor.java
+END
+ShowLoadedComponets.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ShowLoadedComponets.java
+END
+RemoveByAcceptanceCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/608/trunk/src/pl/otros/logview/gui/actions/RemoveByAcceptanceCriteria.java
+END
+UnMarkRowAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/UnMarkRowAction.java
+END
+AutomaticMarkUnamrkActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/672/trunk/src/pl/otros/logview/gui/actions/AutomaticMarkUnamrkActionListener.java
+END
+FocusOnEventsBefore.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/FocusOnEventsBefore.java
+END
+FocusOnThisTrheadAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/FocusOnThisTrheadAction.java
+END
+ClearLogTableAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/616/trunk/src/pl/otros/logview/gui/actions/ClearLogTableAction.java
+END
+IgnoreSelectedEventsClasses.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/IgnoreSelectedEventsClasses.java
+END
+JumpToMarkedAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/actions/JumpToMarkedAction.java
+END
+FocusOnSelectedClassesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/FocusOnSelectedClassesAction.java
+END
+CheckForNewVersionAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/CheckForNewVersionAction.java
+END
+AboutAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/631/trunk/src/pl/otros/logview/gui/actions/AboutAction.java
+END
+StartSocketListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/StartSocketListener.java
+END
+TableResizeActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/TableResizeActionListener.java
+END
+MarkAllFoundAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/actions/MarkAllFoundAction.java
+END
+ShowStringRegexMarkerEditorActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ShowStringRegexMarkerEditorActionListener.java
+END
+MarkRowAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/actions/MarkRowAction.java
+END
+ImportLogActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ImportLogActionListener.java
+END
+ClearMarkingsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ClearMarkingsAction.java
+END
+FocusOnEventsAfter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/FocusOnEventsAfter.java
+END
+ShowMessageColorizerEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/ShowMessageColorizerEditor.java
+END
+CreateUMLActionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/CreateUMLActionListener.java
+END
+GettingStartedAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/GettingStartedAction.java
+END
+FocusOnThisAbstractAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/667/trunk/src/pl/otros/logview/gui/actions/FocusOnThisAbstractAction.java
+END
+SearchByLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/SearchByLevel.java
+END

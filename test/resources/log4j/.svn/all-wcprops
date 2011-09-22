@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/522/trunk/test/resources/log4j
+END
+log4j_pattern3.log
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/442/trunk/test/resources/log4j/log4j_pattern3.log
+END
+log4j_de.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/522/trunk/test/resources/log4j/log4j_de.txt
+END
+log4j_pl.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/522/trunk/test/resources/log4j/log4j_pl.txt
+END
+log4j_cusom_level.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/522/trunk/test/resources/log4j/log4j_cusom_level.txt
+END
+log4j_pattern1.log
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/442/trunk/test/resources/log4j/log4j_pattern1.log
+END
+log4j_pattern2.log
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/442/trunk/test/resources/log4j/log4j_pattern2.log
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter
+END
+AbstractStringBasedFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/671/trunk/src/pl/otros/logview/filter/AbstractStringBasedFilter.java
+END
+LogFilterValueChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/filter/LogFilterValueChangeListener.java
+END
+RegexFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/RegexFilter.java
+END
+TimeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/TimeFilter.java
+END
+FilterPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/filter/FilterPanel.java
+END
+MarkNoteFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/MarkNoteFilter.java
+END
+LogFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/LogFilter.java
+END
+LogDataRowFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/LogDataRowFilter.java
+END
+PropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/PropertyFilter.java
+END
+ClassFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/ClassFilter.java
+END
+StringContainsFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/StringContainsFilter.java
+END
+AbstractLogFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/filter/AbstractLogFilter.java
+END
+LevelFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/LevelFilter.java
+END
+ThreadFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/filter/ThreadFilter.java
+END

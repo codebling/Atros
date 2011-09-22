@@ -1,0 +1,5 @@
+pl.otros.logview.gui.markers.BadWordsMarker
+pl.otros.logview.gui.markers.ExceptionMarker
+pl.otros.logview.gui.markers.FailMarker
+pl.otros.logview.gui.markers.NullMarker
+pl.otros.logview.gui.markers.ErrorMarker

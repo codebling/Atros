@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/668/trunk/src/pl/otros/logview/importer
+END
+AbstractPluginableElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/importer/AbstractPluginableElement.java
+END
+LogImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/importer/LogImporter.java
+END
+Log4jXmlLogImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/importer/Log4jXmlLogImporter.java
+END
+InitializationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/importer/InitializationException.java
+END
+LogImporterUsingParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/importer/LogImporterUsingParser.java
+END
+UtilLoggingXmlLogImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/668/trunk/src/pl/otros/logview/importer/UtilLoggingXmlLogImporter.java
+END

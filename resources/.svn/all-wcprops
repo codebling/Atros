@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/653/trunk/resources
+END
+logger.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/resources/logger.dtd
+END
+log4jDefaultPatternParser.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/523/trunk/resources/log4jDefaultPatternParser.txt
+END

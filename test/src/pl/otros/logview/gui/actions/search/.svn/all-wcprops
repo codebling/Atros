@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/actions/search
+END
+StringContainsSearchMatcherTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/actions/search/StringContainsSearchMatcherTest.java
+END
+FilteredTableNextRowProviderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/actions/search/FilteredTableNextRowProviderTest.java
+END
+RegexMatcherTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/actions/search/RegexMatcherTest.java
+END

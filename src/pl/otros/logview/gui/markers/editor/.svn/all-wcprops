@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/markers/editor
+END
+MarkersListModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/markers/editor/MarkersListModel.java
+END
+MarkerEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/markers/editor/MarkerEditor.java
+END
+NewMarkerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/markers/editor/NewMarkerAction.java
+END
+StringRegexMarkerEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/markers/editor/StringRegexMarkerEditor.java
+END
+MarkersEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/markers/editor/MarkersEditor.java
+END
+SaveMarkerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/markers/editor/SaveMarkerAction.java
+END

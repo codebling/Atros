@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/676/trunk/src/pl/otros/logview/batch
+END
+LogDataParsedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/670/trunk/src/pl/otros/logview/batch/LogDataParsedListener.java
+END
+CmdLineConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/649/trunk/src/pl/otros/logview/batch/CmdLineConfig.java
+END
+BatchProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/649/trunk/src/pl/otros/logview/batch/BatchProcessor.java
+END
+BatchProcessingContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/649/trunk/src/pl/otros/logview/batch/BatchProcessingContext.java
+END
+BatchProcessingListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/616/trunk/src/pl/otros/logview/batch/BatchProcessingListener.java
+END
+SingleFileBatchProcessingListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/620/trunk/src/pl/otros/logview/batch/SingleFileBatchProcessingListener.java
+END
+StreamProcessingLogDataCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/676/trunk/src/pl/otros/logview/batch/StreamProcessingLogDataCollector.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/673/trunk/src/pl/otros/logview/accept
+END
+LowLevelAcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/accept/LowLevelAcceptCondition.java
+END
+SelectedEventsAcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/610/trunk/src/pl/otros/logview/accept/SelectedEventsAcceptCondition.java
+END
+SelectedClassAcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/607/trunk/src/pl/otros/logview/accept/SelectedClassAcceptCondition.java
+END
+AcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/accept/AcceptCondition.java
+END
+SelectedThreadAcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/606/trunk/src/pl/otros/logview/accept/SelectedThreadAcceptCondition.java
+END
+LevelLowerAcceptContition.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/673/trunk/src/pl/otros/logview/accept/LevelLowerAcceptContition.java
+END
+AbstractAcceptContidion.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/accept/AbstractAcceptContidion.java
+END
+HigherIdAcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/accept/HigherIdAcceptCondition.java
+END
+SelectionAwareAcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/accept/SelectionAwareAcceptCondition.java
+END
+LowerIdAcceptCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/accept/LowerIdAcceptCondition.java
+END

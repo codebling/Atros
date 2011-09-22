@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/672/trunk/src/pl/otros/logview/parser
+END
+LogHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/LogHandler.java
+END
+TableColumnNameSelfDescribable.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/TableColumnNameSelfDescribable.java
+END
+ParserDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/ParserDescription.java
+END
+MultiLineLogParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/MultiLineLogParser.java
+END
+LevelParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/LevelParser.java
+END
+Levels.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/117/trunk/src/pl/otros/logview/parser/Levels.properties
+END
+UnknownLevelException.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/UnknownLevelException.java
+END
+ParsingContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/669/trunk/src/pl/otros/logview/parser/ParsingContext.java
+END
+Levels_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/93/trunk/src/pl/otros/logview/parser/Levels_es.properties
+END
+Levels_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/93/trunk/src/pl/otros/logview/parser/Levels_de.properties
+END
+LogParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/parser/LogParser.java
+END
+JulSimpleFormmaterParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/668/trunk/src/pl/otros/logview/parser/JulSimpleFormmaterParser.java
+END

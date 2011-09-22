@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable
+END
+PluginableElementNameListRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/PluginableElementNameListRenderer.java
+END
+PluginableElementsContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/PluginableElementsContainer.java
+END
+PluginableElementEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/PluginableElementEventListener.java
+END
+SynchronizePluginableContainerListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/SynchronizePluginableContainerListener.java
+END
+PlugiableByNameComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/PlugiableByNameComparator.java
+END
+PluginableElementListModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/PluginableElementListModel.java
+END
+PluginableElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/PluginableElement.java
+END
+AllPluginables.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/pluginable/AllPluginables.java
+END

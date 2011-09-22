@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml
+END
+SelectableJComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/SelectableJComponent.java
+END
+LogdataConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/LogdataConverter.java
+END
+LogUmlMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/LogUmlMapper.java
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/Message.java
+END
+ExtraPainter.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/ExtraPainter.java
+END
+StringShape.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/StringShape.java
+END
+UMLModelData.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/UMLModelData.java
+END
+LifelinePainter.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/LifelinePainter.java
+END
+ShapeWithColor.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/ShapeWithColor.java
+END
+LogViewTableWithUMLSynchronizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/LogViewTableWithUMLSynchronizer.java
+END
+UMLModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/uml/UMLModel.java
+END

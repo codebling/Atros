@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/522/trunk/test/resources
+END
+log_de_DE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/345/trunk/test/resources/log_de_DE.txt
+END
+log4jXml.log
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/345/trunk/test/resources/log4jXml.log
+END
+log_soap.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/351/trunk/test/resources/log_soap.txt
+END
+log_pl_PL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/345/trunk/test/resources/log_pl_PL.txt
+END
+smallFile.txt.gz
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/345/trunk/test/resources/smallFile.txt.gz
+END
+jul_log.txt.gz
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/345/trunk/test/resources/jul_log.txt.gz
+END
+log_en_US.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/345/trunk/test/resources/log_en_US.txt
+END
+log_en_GB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/345/trunk/test/resources/log_en_GB.txt
+END
+jul_log.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/345/trunk/test/resources/jul_log.txt
+END
+log4j.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/345/trunk/test/resources/log4j.txt
+END
+log_es_ES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/345/trunk/test/resources/log_es_ES.txt
+END
+empty.gz
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/345/trunk/test/resources/empty.gz
+END
+empty
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/345/trunk/test/resources/empty
+END

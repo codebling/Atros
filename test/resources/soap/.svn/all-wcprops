@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/351/trunk/test/resources/soap
+END
+1-soapMessageFormmated.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/340/trunk/test/resources/soap/1-soapMessageFormmated.txt
+END
+2-soapMessageFormmated.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/340/trunk/test/resources/soap/2-soapMessageFormmated.txt
+END
+stringWithSoap.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/351/trunk/test/resources/soap/stringWithSoap.txt
+END
+1-soapMessage.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/340/trunk/test/resources/soap/1-soapMessage.txt
+END
+2-soapMessage.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/340/trunk/test/resources/soap/2-soapMessage.txt
+END

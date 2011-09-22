@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/514/trunk/test/resources/stacktrace
+END
+stacktrace.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/514/trunk/test/resources/stacktrace/stacktrace.txt
+END
+stacktrace2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/514/trunk/test/resources/stacktrace/stacktrace2.txt
+END
+jul_log_exception.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/514/trunk/test/resources/stacktrace/jul_log_exception.txt
+END
+stacktTraceOnly.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/514/trunk/test/resources/stacktrace/stacktTraceOnly.txt
+END
+stacktTraceWtihEmptyPackage.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/514/trunk/test/resources/stacktrace/stacktTraceWtihEmptyPackage.txt
+END

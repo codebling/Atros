@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/actions/search
+END
+StringContainsSearchMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/StringContainsSearchMatcher.java
+END
+NextRowProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/NextRowProvider.java
+END
+SearchAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/actions/search/SearchAction.java
+END
+SearchResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/SearchResult.java
+END
+RegexValidatorDocumentListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/RegexValidatorDocumentListener.java
+END
+SearchDirection.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/SearchDirection.java
+END
+FilteredTableNextRowProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/FilteredTableNextRowProvider.java
+END
+SearchFieldKeyListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/SearchFieldKeyListener.java
+END
+SearchMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/SearchMatcher.java
+END
+NextRowProviderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/NextRowProviderFactory.java
+END
+SearchContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/SearchContext.java
+END
+SearchEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/SearchEngine.java
+END
+RegexMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/actions/search/RegexMatcher.java
+END

@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/680/trunk/src/pl/otros/logview/gui
+END
+Log4jPatternParserEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/662/trunk/src/pl/otros/logview/gui/Log4jPatternParserEditor.java
+END
+TailingModeMarkersPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/672/trunk/src/pl/otros/logview/gui/TailingModeMarkersPanel.java
+END
+LogDataTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/680/trunk/src/pl/otros/logview/gui/LogDataTableModel.java
+END
+JLabelStatusObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/JLabelStatusObserver.java
+END
+GuiUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/GuiUtils.java
+END
+MarkableTableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/MarkableTableModel.java
+END
+PopupListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/PopupListener.java
+END
+ScrollableHeighOnlyPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/ScrollableHeighOnlyPanel.java
+END
+EmptyViewPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/EmptyViewPanel.java
+END
+Icons.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/610/trunk/src/pl/otros/logview/gui/Icons.java
+END
+MessageDetailListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/MessageDetailListener.java
+END
+JAnimatedLogo.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/JAnimatedLogo.java
+END
+TabHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/TabHeader.java
+END
+ConfKeys.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/ConfKeys.java
+END
+OtrosSplash.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/OtrosSplash.java
+END
+EnableDisableComponetsForTabs.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/EnableDisableComponetsForTabs.java
+END
+HasIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/670/trunk/src/pl/otros/logview/gui/HasIcon.java
+END
+LogViewInternalFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/LogViewInternalFrame.java
+END
+ColorIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/ColorIcon.java
+END
+AllNotesTextAreaObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/AllNotesTextAreaObserver.java
+END
+StatusObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/StatusObserver.java
+END
+LogImportStats.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/LogImportStats.java
+END
+LogViewPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/LogViewPanel.java
+END
+LogViewMainFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/678/trunk/src/pl/otros/logview/gui/LogViewMainFrame.java
+END
+MemoryUsedStatsUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/MemoryUsedStatsUpdater.java
+END
+LogViewPanelWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/618/trunk/src/pl/otros/logview/gui/LogViewPanelWrapper.java
+END
+SubText.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/604/trunk/src/pl/otros/logview/gui/SubText.java
+END

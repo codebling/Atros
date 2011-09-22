@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/626/trunk/files
+END
+logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/590/trunk/files/logging.properties
+END
+olv-batch.bat
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/617/trunk/files/olv-batch.bat
+END
+olv.bat
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/626/trunk/files/olv.bat
+END
+olv-batch.sh
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/617/trunk/files/olv-batch.sh
+END
+olv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/617/trunk/files/olv.sh
+END

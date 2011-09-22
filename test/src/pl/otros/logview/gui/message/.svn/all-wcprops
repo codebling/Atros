@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/message
+END
+SoapFinderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/message/SoapFinderTest.java
+END
+StackTraceFinderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/message/StackTraceFinderTest.java
+END
+StackTraceColorizerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/604/trunk/test/src/pl/otros/logview/gui/message/StackTraceColorizerTest.java
+END

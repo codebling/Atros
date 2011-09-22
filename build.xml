@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LogView" default="default" basedir=".">
+	<description>Builds, tests, and runs the project LogView.</description>
+	<property name="dir.build" value="build" />
+	<property name="dir.dist" value="dist" />
+	<property name="test.src" value="test/src" />
+	<property name="test.resources" value="test/resources" />
+	<property name="dir.test" value="build/tests" />
+	<property name="dir.reports" value="build/reports" />
+	<property name="jar.logview" value="logview.jar" />
+	<path id="project.classpath">
+		<fileset dir="lib" includes="**">
+		</fileset>
+	</path>
+
+	<property name="emma.dir" value="emma" />
+	<property name="emma.dir.coverage" value="${emma.dir}/coverage" />
+	<property name="emma.dir.src" value="${emma.dir}/src/" />
+	<property name="emma.dir.class" value="${emma.dir}/class/" />
+	<property name="emma.dir.intrumented" value="${emma.dir}/inst/" />
+	<path id="emma.lib">
+		<fileset dir="testlib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<taskdef resource="emma_ant.properties" classpathref="emma.lib" />
+
+
+
+	<target name="default" depends="">
+		<echo>Default target</echo>
+		<antcall target="build all" />
+		<antcall target="test" />
+		<antcall target="emma" />
+	</target>
+
+	<target name="build all" depends="clean, prepare_env, compile_logview, copy_logview_sources, create_jars, copy_jars, copy_additional_files">
+	</target>
+
+	<target name="clean">
+		<echo>Cleaning</echo>
+		<delete dir="${dir.build}" />
+		<delete dir="${dir.dist}" />
+	</target>
+
+	<target name="prepare_env">
+		<echo>Preparing env</echo>
+		<mkdir dir="${dir.build}" />
+		<mkdir dir="${dir.build}/logview" />
+		<mkdir dir="${dir.test}" />
+		<mkdir dir="${dir.dist}/lib" />
+		<mkdir dir="${dir.dist}/plugins/markers" />
+		<mkdir dir="${dir.dist}/plugins/filters" />
+		<mkdir dir="${dir.dist}/plugins/logimporters" />
+		<mkdir dir="${dir.dist}" />
+		<mkdir dir="${dir.test}" />
+		<mkdir dir="${dir.reports}" />
+
+		<tstamp>
+			<format property="TODAY" pattern="yyyy-MM-dd" />
+		</tstamp>
+		<echo message="Today is ${TODAY}" />
+	</target>
+
+
+	<target name="compile_logview">
+		<echo>Compiling logview</echo>
+		<javac debug="false" srcdir="src" destdir="${dir.build}/logview" target="1.6">
+			<classpath>
+				<fileset dir="lib" includes="**">
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="copy_logview_sources">
+		<echo>Coping logview sources</echo>
+		<copy todir="${dir.build}/logview">
+			<fileset dir="src">
+			</fileset>
+		</copy>
+		<copy todir="${dir.build}/logview">
+			<fileset dir="resources">
+			</fileset>
+		</copy>
+	</target>
+
+
+	<target name="create_jars">
+		<echo>Creating logview.jar</echo>
+		<echo message="project.classpath = ${project.classpath}" />
+		<pathconvert property="mf.classpath" pathsep=" " dirsep="/">
+			<path refid="project.classpath" />
+			<map from="" to="./lib/" />
+			<flattenmapper />
+		</pathconvert>
+		<echo message="mf.classpath = ${mf.classpath}" />
+		<jar destfile="${dir.dist}/${jar.logview}">
+			<fileset dir="${dir.build}/logview">
+			</fileset>
+			<manifest>
+				<attribute name="Created-By" value="KrzyH" />
+				<attribute name="Class-Path" value="${mf.classpath}" />
+				<attribute name="Main-Class" value="pl.otros.logview.gui.LogViewMainFrame" />
+				<attribute name="Implementation-Version" value="${TODAY}" />
+				<attribute name="SplashScreen-Image" value="img/otros/splash.png"/>
+			</manifest>
+		</jar>
+
+	</target>
+
+	<target name="copy_additional_files">
+		<copy todir="${dir.dist}">
+			<fileset dir="files" />
+		</copy>
+	</target>
+
+	<target name="copy_jars">
+		<copy todir="${dir.dist}/lib/">
+			<fileset dir="lib">
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="test" depends="prepare_env, compile_logview, compile_test">
+		<junit haltonerror="no" haltonfailure="no" showoutput="yes" printsummary="yes" filtertrace="no">
+			<classpath>
+				<fileset dir="lib" includes="**" />
+				<fileset dir="testlib" includes="**" />
+				<dirset dir="${dir.build}/logview/">
+				</dirset>
+				<dirset dir="${dir.test}">
+				</dirset>
+				<dirset dir="${test.resources}">
+				</dirset>
+			</classpath>
+			<batchtest todir="${dir.reports}" filtertrace="no">
+				<formatter type="xml" />
+				<fileset dir="${test.src}">
+					<include name="**/*Test.java" />
+				</fileset>
+
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="compile_test">
+		<echo>Compiling tests</echo>
+		<javac debug="true" srcdir="${test.src}" destdir="${dir.test}" target="1.6">
+			<classpath>
+				<fileset dir="lib" includes="**" />
+				<fileset dir="testlib" includes="**" />
+				<dirset dir="${dir.build}/logview">
+				</dirset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="emma">
+		<delete file="${emma.dir}" />
+		<mkdir dir="${emma.dir}" />
+		<mkdir dir="${emma.dir.class}" />
+		<mkdir dir="${emma.dir.coverage}" />
+		<mkdir dir="${emma.dir.intrumented}" />
+		<mkdir dir="${emma.dir.src}" />
+
+
+		<emma enabled="true">
+			<instr instrpath="${dir.build}/logview" destdir="${emma.dir.intrumented}" metadatafile="${emma.dir.coverage}/metadata.emma" merge="true">
+				<filter excludes="au.com.jenisys.view.*" />
+			</instr>
+		</emma>
+	
+		<echo>Using path to intrumented: ${emma.dir.intrumented}</echo>
+		<junit haltonerror="no" haltonfailure="no" showoutput="yes" printsummary="yes" filtertrace="no">
+			<classpath>
+				<fileset dir="lib" includes="**" />
+				<fileset dir="testlib" includes="**" />
+				<pathelement location="${emma.dir.intrumented}" />
+				<!--				 
+				<dirset includes="${emma.dir.intrumented}"></dirset>
+				<dirset dir="${emma.dir.intrumented}"/>
+				<dirset dir="${dir.build}/logview"/>
+				 ${emma.dir.intrumented}/ 
+				 ${dir.build}/logview/
+				 -->
+				<dirset dir="${dir.test}"/> 
+				<dirset dir="${test.resources}"/>
+			</classpath>
+			<batchtest todir="${emma.dir.coverage}" filtertrace="no">
+				<formatter type="plain" />
+				<fileset dir="${test.src}">
+					<include name="**/*Test.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+
+		<emma enabled="true">
+			<report sourcepath="src">
+				<fileset dir="${emma.dir.coverage}">
+					<include name="*.emma" />
+				</fileset>
+
+				<xml outfile="${emma.dir.coverage}/coverage.xml" depth="method" />
+			</report>
+		</emma>
+
+	</target>
+
+</project>
