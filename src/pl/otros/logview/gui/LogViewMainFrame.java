@@ -20,6 +20,7 @@ import java.awt.CardLayout;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Frame;
 import java.awt.KeyboardFocusManager;
 import java.awt.Point;
 import java.awt.Toolkit;
@@ -196,6 +197,7 @@ public class LogViewMainFrame extends JFrame {
             public void componentResized(ComponentEvent e) {
               c.setProperty("gui.width", mf.getWidth());
               c.setProperty("gui.height", mf.getHeight());
+              c.setProperty("gui.state", mf.getExtendedState());
             }
 
             @Override
@@ -544,6 +546,7 @@ public class LogViewMainFrame extends JFrame {
   private void initPosition() {
     Dimension size = new Dimension(configuration.getInt("gui.width", 1280), configuration.getInt("gui.height", 780));
     Point location = new Point(configuration.getInt("gui.location.x", 100), configuration.getInt("gui.location.y", 100));
+    int state = configuration.getInt("gui.state", Frame.NORMAL);
     Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
     if (location.x > screensize.width) {
       location.x = 0;
@@ -555,6 +558,7 @@ public class LogViewMainFrame extends JFrame {
     size.height = Math.min(screensize.height, size.height);
     this.setSize(size);
     this.setLocation(location);
+    this.setExtendedState(state);
   }
 
   private static XMLConfiguration getConfiguration(String file) {
