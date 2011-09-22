@@ -28,6 +28,9 @@ public class LogData implements Serializable {
   private String messageId = "";
   private String clazz = "";
   private String method = "";
+  private String file = "";
+  private String line = "";
+  private String ndc = "";
   private String thread = "";
   private String loggerName = "";
   private String message = "";
@@ -77,6 +80,30 @@ public class LogData implements Serializable {
     this.method = method;
   }
 
+  public String getFile() {
+    return file;
+  }
+
+  public void setFile(String file) {
+    this.file = file;
+  }
+
+  public String getLine() {
+    return line;
+  }
+
+  public void setLine(String line) {
+    this.line = line;
+  }
+
+  public String getNDC() {
+    return ndc;
+  }
+
+  public void setNDC(String ndc) {
+    this.ndc = ndc;
+  }
+
   public String getThread() {
     return thread;
   }
@@ -117,6 +144,12 @@ public class LogData implements Serializable {
     sb.append(clazz);
     sb.append(", method: ");
     sb.append(method);
+    sb.append(", file: ");
+    sb.append(file);
+    sb.append(", line: ");
+    sb.append(line);
+    sb.append(", ndc: ");
+    sb.append(ndc);
 
     return sb.toString();
   }
@@ -129,84 +162,52 @@ public class LogData implements Serializable {
     this.id = id;
   }
 
-  /*
-   * (non-Javadoc)
-   * 
-   * @see java.lang.Object#hashCode()
-   */
   @Override
-  public int hashCode() {
-    final int prime = 31;
-    int result = 1;
-    result = prime * result + ((clazz == null) ? 0 : clazz.hashCode());
-    result = prime * result + ((date == null) ? 0 : date.hashCode());
-    result = prime * result + id;
-    result = prime * result + ((level == null) ? 0 : level.hashCode());
-    result = prime * result + ((loggerName == null) ? 0 : loggerName.hashCode());
-    result = prime * result + ((message == null) ? 0 : message.hashCode());
-    result = prime * result + ((messageId == null) ? 0 : messageId.hashCode());
-    result = prime * result + ((method == null) ? 0 : method.hashCode());
-    result = prime * result + ((thread == null) ? 0 : thread.hashCode());
-    return result;
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+
+    LogData logData = (LogData) o;
+
+    if (id != logData.id) return false;
+    if (marked != logData.marked) return false;
+    if (clazz != null ? !clazz.equals(logData.clazz) : logData.clazz != null) return false;
+    if (date != null ? !date.equals(logData.date) : logData.date != null) return false;
+    if (file != null ? !file.equals(logData.file) : logData.file != null) return false;
+    if (level != null ? !level.equals(logData.level) : logData.level != null) return false;
+    if (line != null ? !line.equals(logData.line) : logData.line != null) return false;
+    if (loggerName != null ? !loggerName.equals(logData.loggerName) : logData.loggerName != null) return false;
+    if (markerColors != logData.markerColors) return false;
+    if (message != null ? !message.equals(logData.message) : logData.message != null) return false;
+    if (messageId != null ? !messageId.equals(logData.messageId) : logData.messageId != null) return false;
+    if (method != null ? !method.equals(logData.method) : logData.method != null) return false;
+    if (ndc != null ? !ndc.equals(logData.ndc) : logData.ndc != null) return false;
+    if (note != null ? !note.equals(logData.note) : logData.note != null) return false;
+    if (properties != null ? !properties.equals(logData.properties) : logData.properties != null) return false;
+    if (thread != null ? !thread.equals(logData.thread) : logData.thread != null) return false;
+
+    return true;
   }
 
-  /*
-   * (non-Javadoc)
-   * 
-   * @see java.lang.Object#equals(java.lang.Object)
-   */
   @Override
-  public boolean equals(Object obj) {
-    if (this == obj)
-      return true;
-    if (obj == null)
-      return false;
-    if (!(obj instanceof LogData))
-      return false;
-    LogData other = (LogData) obj;
-    if (clazz == null) {
-      if (other.clazz != null)
-        return false;
-    } else if (!clazz.equals(other.clazz))
-      return false;
-    if (date == null) {
-      if (other.date != null)
-        return false;
-    } else if (!date.equals(other.date))
-      return false;
-    if (id != other.id)
-      return false;
-    if (level == null) {
-      if (other.level != null)
-        return false;
-    } else if (!level.equals(other.level))
-      return false;
-    if (loggerName == null) {
-      if (other.loggerName != null)
-        return false;
-    } else if (!loggerName.equals(other.loggerName))
-      return false;
-    if (message == null) {
-      if (other.message != null)
-        return false;
-    } else if (!message.equals(other.message))
-      return false;
-    if (messageId == null) {
-      if (other.messageId != null)
-        return false;
-    } else if (!messageId.equals(other.messageId))
-      return false;
-    if (method == null) {
-      if (other.method != null)
-        return false;
-    } else if (!method.equals(other.method))
-      return false;
-    if (thread == null) {
-      if (other.thread != null)
-        return false;
-    } else if (!thread.equals(other.thread))
-      return false;
-    return true;
+  public int hashCode() {
+    int result = date != null ? date.hashCode() : 0;
+    result = 31 * result + (level != null ? level.hashCode() : 0);
+    result = 31 * result + (messageId != null ? messageId.hashCode() : 0);
+    result = 31 * result + (clazz != null ? clazz.hashCode() : 0);
+    result = 31 * result + (method != null ? method.hashCode() : 0);
+    result = 31 * result + (file != null ? file.hashCode() : 0);
+    result = 31 * result + (line != null ? line.hashCode() : 0);
+    result = 31 * result + (ndc != null ? ndc.hashCode() : 0);
+    result = 31 * result + (thread != null ? thread.hashCode() : 0);
+    result = 31 * result + (loggerName != null ? loggerName.hashCode() : 0);
+    result = 31 * result + (message != null ? message.hashCode() : 0);
+    result = 31 * result + id;
+    result = 31 * result + (properties != null ? properties.hashCode() : 0);
+    result = 31 * result + (note != null ? note.hashCode() : 0);
+    result = 31 * result + (marked ? 1 : 0);
+    result = 31 * result + (markerColors != null ? markerColors.hashCode() : 0);
+    return result;
   }
 
   public Map<String, String> getProperties() {

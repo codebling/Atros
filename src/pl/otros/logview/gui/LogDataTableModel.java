@@ -136,6 +136,15 @@ public class LogDataTableModel extends AbstractTableModel implements LogDataColl
           result = EMPTY_NOTE;
         }
         break;
+      case FILE:
+        result = ld.getFile();
+        break;
+      case LINE:
+        result = ld.getLine();
+        break;
+      case NDC:
+        result = ld.getNDC();
+        break;
       case PROPERTIES:
         result = getProperties(ld);
       default:
