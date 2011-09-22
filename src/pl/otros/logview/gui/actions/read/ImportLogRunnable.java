@@ -57,7 +57,11 @@ public final class ImportLogRunnable implements Runnable {
     t.setDaemon(true);
     t.start();
     panel.addHierarchyListener(new ReadingStopperForRemove(openFileObject.getObserableInputStreamImpl()));
-    importer.importLogs(openFileObject.getContentInputStream(), logDataStore, parsingContext);
+    try {
+      importer.importLogs(openFileObject.getContentInputStream(), logDataStore, parsingContext);
+    } catch (RuntimeException e) {
+      LOGGER.throwing(importer.getClass().getName(), "importLogs", e);
+    }
     LOGGER.info("File " + file.getName().getFriendlyURI() + " loaded");
     SwingUtilities.invokeLater(new Runnable() {
 
