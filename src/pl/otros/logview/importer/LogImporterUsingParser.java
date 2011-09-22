@@ -100,9 +100,11 @@ public class LogImporterUsingParser implements LogImporter, TableColumnNameSelfD
         LOGGER.severe("IOException during log import: " + e.getMessage());
         break;
       } catch (ParseException e) {
-        LOGGER.severe("ParseEception during log import: " + e.getMessage());
         e.printStackTrace();
-        break;
+        LOGGER.severe("ParseEception during log import: " + e.getMessage());
+        //don't break, attempt to continue reading parsing log.
+        //even if parser is in faulty state and continues to throw this exception,
+        // we will only loop as many times as there are lines in the file.
       }
     }
 

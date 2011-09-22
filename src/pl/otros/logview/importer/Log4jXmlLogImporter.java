@@ -16,10 +16,12 @@
 package pl.otros.logview.importer;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
 import java.util.Vector;
+import java.util.logging.Logger;
 
 import javax.swing.Icon;
 
@@ -32,6 +34,8 @@ import pl.otros.logview.parser.ParsingContext;
 import pl.otros.logview.parser.log4j.Log4jUtil;
 
 public class Log4jXmlLogImporter extends AbstractPluginableElement implements LogImporter {
+
+  private static final Logger LOGGER = Logger.getLogger(Log4jXmlLogImporter.class.getName());
 
   public Log4jXmlLogImporter() {
     super("Log4j xml", "Parser log4j xml");
@@ -46,24 +50,36 @@ public class Log4jXmlLogImporter extends AbstractPluginableElement implements Lo
   @Override
   public void importLogs(InputStream in, LogDataCollector dataCollector, ParsingContext parsingContext) {
     try {
-      XMLDecoder decoder = XMLDecoder.class.newInstance();
-      BufferedReader bin = new BufferedReader(new InputStreamReader(in));
+    XMLDecoder decoder = XMLDecoder.class.newInstance();
+    BufferedReader bin = new BufferedReader(new InputStreamReader(in));
       String line = null;
       // IOUtils.toString(in);
       // decoder.decodeEvents(arg0)
       while ((line = bin.readLine()) != null) {
-        Vector decodeEvents = decoder.decodeEvents(line + System.getProperty("line.separator"));
-        if (decodeEvents != null) {
-          for (Object object : decodeEvents) {
-            LoggingEvent event = (LoggingEvent) object;
-            LogData logdata = Log4jUtil.translateLog4j(event);
-            logdata.setId(parsingContext.getGeneratedIdAndIncrease());
-            dataCollector.add(logdata);
+        try {
+          Vector decodeEvents = decoder.decodeEvents(line + System.getProperty("line.separator"));
+          if (decodeEvents != null) {
+            for (Object object : decodeEvents) {
+              LoggingEvent event = (LoggingEvent) object;
+              LogData logdata = Log4jUtil.translateLog4j(event);
+              logdata.setId(parsingContext.getGeneratedIdAndIncrease());
+              dataCollector.add(logdata);
+            }
           }
+        } catch (Exception e) {
+          e.printStackTrace();
+          LOGGER.severe("ParseEception during log import: " + e.getMessage());
         }
       }
-    } catch (Exception e) {
-      throw new RuntimeException(e);
+    } catch (InstantiationException e) {
+      e.printStackTrace();
+      LOGGER.severe("Error creating XMLDecoder during log import: " + e.getMessage());
+    } catch (IllegalAccessException e) {
+      e.printStackTrace();
+      LOGGER.severe("Error creating XMLDecoder during log import: " + e.getMessage());
+    } catch (IOException e) {
+      e.printStackTrace();
+      LOGGER.severe("IOException during log import: " + e.getMessage());
     }
   }
 

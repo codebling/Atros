@@ -122,8 +122,8 @@ public class UtilLoggingXmlLogImporter extends AbstractPluginableElement impleme
     } catch (UnsupportedEncodingException e) {
       LOGGER.severe("Cant load codepage " + e.getMessage());
     } catch (IOException e) {
-      // TODO Auto-generated catch block
       e.printStackTrace();
+      LOGGER.severe("IOException during log import: " + e.getMessage());
     }
 
   }
