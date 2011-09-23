@@ -25,16 +25,15 @@ import org.jdesktop.swingx.JXTipOfTheDay;
 import org.jdesktop.swingx.JXTipOfTheDay.ShowOnStartupChoice;
 import org.jdesktop.swingx.tips.TipLoader;
 import org.jdesktop.swingx.tips.TipOfTheDayModel;
+import pl.otros.logview.persistance.PersistentConfiguration;
 
 public class TipOfTheDay {
 
   private static final String GUI_SHOW_TIP_OF_THE_DAY = "gui.showTipOfTheDay";
   private static final Logger LOGGER = Logger.getLogger(TipOfTheDay.class.getName());
-  private DataConfiguration dataConfiguration;
 
-  public TipOfTheDay(DataConfiguration dataConfiguration) {
+  public TipOfTheDay() {
     super();
-    this.dataConfiguration = dataConfiguration;
   }
 
   public void showTipOfTheDayIfNotDisabled(Component parent) {
@@ -47,12 +46,12 @@ public class TipOfTheDay {
 
         @Override
         public void setShowingOnStartup(boolean arg0) {
-          dataConfiguration.setProperty(GUI_SHOW_TIP_OF_THE_DAY, arg0);
+          PersistentConfiguration.getInstance().setProperty(GUI_SHOW_TIP_OF_THE_DAY, arg0);
         }
 
         @Override
         public boolean isShowingOnStartup() {
-          return dataConfiguration.getBoolean(GUI_SHOW_TIP_OF_THE_DAY, true);
+          return PersistentConfiguration.getInstance().getBoolean(GUI_SHOW_TIP_OF_THE_DAY, true);
         }
       });
     } catch (IOException e) {

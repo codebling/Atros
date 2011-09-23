@@ -352,6 +352,7 @@ public class MessageColorizerBrowser extends JPanel {
   class DeleteSelected extends AbstractActionWithConfirmation {
 
     public DeleteSelected() {
+      super("deleteselectedmessagecolorizer");
       putValue(NAME, "Delete");
       putValue(SHORT_DESCRIPTION, "Wiil delete selected message colorizer");
       putValue(SMALL_ICON, Icons.DELETE);

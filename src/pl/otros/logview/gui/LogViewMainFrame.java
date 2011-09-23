@@ -66,10 +66,6 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.DocumentEvent;
 
-import org.apache.commons.configuration.ConfigurationException;
-import org.apache.commons.configuration.DataConfiguration;
-import org.apache.commons.configuration.XMLConfiguration;
-
 import pl.otros.logview.MarkerColors;
 import pl.otros.logview.VersionUtil;
 import pl.otros.logview.batch.BatchProcessor;
@@ -109,6 +105,7 @@ import pl.otros.logview.importer.InitializationException;
 import pl.otros.logview.importer.LogImporter;
 import pl.otros.logview.loader.IconsLoader;
 import pl.otros.logview.loader.LvDynamicLoader;
+import pl.otros.logview.persistance.PersistentConfiguration;
 import pl.otros.logview.pluginable.AllPluginables;
 import pl.otros.logview.pluginable.PluginableElementsContainer;
 
@@ -130,7 +127,6 @@ public class LogViewMainFrame extends JFrame {
   private JLabelStatusObserver observer;
   private JTabbedPane logsTabbedPane;
   private EnableDisableComponetsForTabs enableDisableComponetsForTabs;
-  private DataConfiguration configuration;
   private CardLayout cardLayout;
   private JPanel cardLayoutPanel;
 
@@ -173,7 +169,7 @@ public class LogViewMainFrame extends JFrame {
     }
     OtrosSplash.setMessage("Loading configuration");
 
-    final XMLConfiguration c = getConfiguration("config.xml");
+    final PersistentConfiguration c = PersistentConfiguration.getInstance(); //for convenience
     IconsLoader.loadIcons();
     OtrosSplash.setMessage("Loading icons");
     SwingUtilities.invokeAndWait(new Runnable() {
@@ -191,7 +187,7 @@ public class LogViewMainFrame extends JFrame {
         }
         try {
 
-          final LogViewMainFrame mf = new LogViewMainFrame(new DataConfiguration(c));
+          final LogViewMainFrame mf = new LogViewMainFrame();
           mf.addComponentListener(new ComponentAdapter() {
 
             @Override
@@ -220,9 +216,8 @@ public class LogViewMainFrame extends JFrame {
 
   }
 
-  public LogViewMainFrame(DataConfiguration c) throws InitializationException {
+  public LogViewMainFrame() throws InitializationException {
     super();
-    this.configuration = c;
     this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
     String title = "OtrosLogViewer ";
     try {
@@ -318,7 +313,7 @@ public class LogViewMainFrame extends JFrame {
     initPosition();
     OtrosSplash.hide();
     setVisible(true);
-    new TipOfTheDay(c).showTipOfTheDayIfNotDisabled(this);
+    new TipOfTheDay().showTipOfTheDayIfNotDisabled(this);
   }
 
   private void initToolbar() {
@@ -357,22 +352,22 @@ public class LogViewMainFrame extends JFrame {
         }
         searchActionForward.setSearchMode(mode);
         searchActionBackward.setSearchMode(mode);
-        configuration.setProperty("gui.searchMode", mode);
+        PersistentConfiguration.getInstance().setProperty("gui.searchMode", mode);
         searchResultColorizer.setSearchMode(mode);
       }
     });
-    ;
-    searchMode.setSelectedIndex(configuration.get(SearchMode.class, "gui.searchMode", SearchMode.STRING_CONTAINS).equals(SearchMode.STRING_CONTAINS) ? 0 : 1);
+    final PersistentConfiguration c = PersistentConfiguration.getInstance();
+    searchMode.setSelectedIndex(c.get(SearchMode.class, "gui.searchMode", SearchMode.STRING_CONTAINS).equals(SearchMode.STRING_CONTAINS) ? 0 : 1);
 
     final JCheckBox markFound = new JCheckBox("Mark search result");
     markFound.setMnemonic(KeyEvent.VK_M);
     MarkAllFoundAction markAllFoundAction = new MarkAllFoundAction(observer, logsTabbedPane, searchField);
     searchField.addKeyListener(markAllFoundAction);
-    configuration.addConfigurationListener(markAllFoundAction);
+    c.addConfigurationListener(markAllFoundAction);
     JButton markAllFoundButton = new JButton(markAllFoundAction);
 
     final JComboBox markColor = new JComboBox(MarkerColors.values());
-    markFound.setSelected(configuration.getBoolean("gui.markFound", true));
+    markFound.setSelected(c.getBoolean("gui.markFound", true));
     markFound.addChangeListener(new ChangeListener() {
 
       @Override
@@ -380,7 +375,7 @@ public class LogViewMainFrame extends JFrame {
         boolean selected = markFound.isSelected();
         searchActionForward.setMarkFound(selected);
         searchActionBackward.setMarkFound(selected);
-        configuration.setProperty("gui.markFound", markFound.isSelected());
+        c.setProperty("gui.markFound", markFound.isSelected());
       }
     });
 
@@ -392,10 +387,10 @@ public class LogViewMainFrame extends JFrame {
         MarkerColors markerColors = (MarkerColors) markColor.getSelectedItem();
         searchActionForward.setMarkerColors(markerColors);
         searchActionBackward.setMarkerColors(markerColors);
-        configuration.setProperty("gui.markColor", markColor.getSelectedItem());
+        c.setProperty("gui.markColor", markColor.getSelectedItem());
       }
     });
-    markColor.getModel().setSelectedItem(configuration.get(MarkerColors.class, "gui.markColor", MarkerColors.Aqua));
+    markColor.getModel().setSelectedItem(c.get(MarkerColors.class, "gui.markColor", MarkerColors.Aqua));
 
     buttonSearch = new JButton(searchActionForward);
     searchActionForward.setSearchStringField(searchField);
@@ -548,9 +543,10 @@ public class LogViewMainFrame extends JFrame {
   }
 
   private void initPosition() {
-    Dimension size = new Dimension(configuration.getInt("gui.width", 1280), configuration.getInt("gui.height", 780));
-    Point location = new Point(configuration.getInt("gui.location.x", 100), configuration.getInt("gui.location.y", 100));
-    int state = configuration.getInt("gui.state", Frame.NORMAL);
+    final PersistentConfiguration c = PersistentConfiguration.getInstance(); //for convenience
+    Dimension size = new Dimension(c.getInt("gui.width", 1280), c.getInt("gui.height", 780));
+    Point location = new Point(c.getInt("gui.location.x", 100), c.getInt("gui.location.y", 100));
+    int state = c.getInt("gui.state", Frame.NORMAL);
     Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
     if (location.x > screensize.width) {
       location.x = 0;
@@ -565,22 +561,4 @@ public class LogViewMainFrame extends JFrame {
     this.setExtendedState(state);
   }
 
-  private static XMLConfiguration getConfiguration(String file) {
-    XMLConfiguration xmlConfiguration = new XMLConfiguration();
-    try {
-      xmlConfiguration = new XMLConfiguration(new File(file));
-      xmlConfiguration.setAutoSave(true);
-    } catch (ConfigurationException e) {
-      LOGGER.severe("Can't load configuration, creating new " + e.getMessage());
-      xmlConfiguration.setFile(new File(file));
-
-      try {
-        xmlConfiguration.save();
-        xmlConfiguration.setAutoSave(true);
-      } catch (ConfigurationException e1) {
-        LOGGER.severe("Can't create persistent configuration: " + e1.getMessage());
-      }
-    }
-    return xmlConfiguration;
-  }
 }

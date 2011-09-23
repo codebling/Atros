@@ -15,37 +15,30 @@
  ******************************************************************************/
 package pl.otros.logview.gui.actions;
 
-import java.awt.BorderLayout;
+import pl.otros.logview.gui.util.PersistentConfirmationDialog;
+
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 public abstract class AbstractActionWithConfirmation extends AbstractAction {
 
-  private static boolean doNotAskAgain = false;
-
+  private final String configKey;
+  
   public AbstractActionWithConfirmation() {
     super();
+    configKey = new Throwable().getStackTrace()[1].getClassName();
+  }
+
+  public AbstractActionWithConfirmation(String configKey) {
+    super();
+    this.configKey = configKey;
   }
 
   @Override
   public final void actionPerformed(ActionEvent e) {
-    boolean confirm = true;
-    if (!doNotAskAgain) {
-      JPanel component = new JPanel(new BorderLayout());
-      component.add(new JLabel(getWarnningMessage()));
-      JCheckBox jCheckBox = new JCheckBox("Do not ask again!");
-      component.add(jCheckBox, BorderLayout.SOUTH);
-      int showConfirmDialog = JOptionPane.showConfirmDialog((Component) e.getSource(), component, "Confirm", JOptionPane.YES_NO_OPTION);
-      confirm = showConfirmDialog == JOptionPane.YES_OPTION;
-      doNotAskAgain = jCheckBox.isSelected();
-    }
-    if (confirm) {
+    if (PersistentConfirmationDialog.showConfirmDialog((Component) e.getSource(), getWarnningMessage(), configKey)) {
       actionPerformedHook(e);
     }
   }

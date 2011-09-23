@@ -28,7 +28,7 @@ public class ClearLogTableAction extends AbstractActionWithConfirmation {
   private static final String ACTION_NAME = "Clear table";
 
   public ClearLogTableAction(LogDataTableModel dataTableModel) {
-    // super(NAME, Icons.CLEAR);
+    super("clear");
     putValue(NAME, ACTION_NAME);
     putValue(SMALL_ICON, Icons.CLEAR);
     this.dataTableModel = dataTableModel;

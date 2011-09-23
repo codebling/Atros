@@ -15,6 +15,8 @@
  ******************************************************************************/
 package pl.otros.logview.gui;
 
+import pl.otros.logview.gui.util.PersistentConfirmationDialog;
+
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -99,9 +101,7 @@ public class TabHeader extends JPanel {
   protected void closeTab() {
     int tabNumber = pane.indexOfTabComponent(TabHeader.this);
     if (tabNumber != -1) {
-      int showConfirmDialog = JOptionPane.showConfirmDialog(pane, "Do you really want to close \"" + label.getText() + "\"?", "Are you sure?",
-          JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
-      if (showConfirmDialog == JOptionPane.OK_OPTION) {
+      if (PersistentConfirmationDialog.showConfirmDialog(pane, "Do you really want to close \"" + label.getText() + "\"?", "closetab")) {
         pane.remove(tabNumber);
       }
     }

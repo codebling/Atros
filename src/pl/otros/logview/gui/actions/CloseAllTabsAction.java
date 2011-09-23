@@ -24,6 +24,7 @@ public class CloseAllTabsAction extends AbstractActionWithConfirmation {
   private JTabbedPane jTabbedPane;
 
   public CloseAllTabsAction(JTabbedPane jTabbedPane) {
+    super("closeall");
     this.jTabbedPane = jTabbedPane;
     putValue(NAME, "Close all");
     putValue(SHORT_DESCRIPTION, "Close all open tabs");
