@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 27
-/svn/!svn/ver/665/trunk/lib
+/svn/!svn/ver/688/trunk/lib
 END
 VFSJFileChooser-0.0.3m.jar
 K 25
@@ -20,6 +20,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 55
 /svn/!svn/ver/220/trunk/lib/commons-beanutils-1.8.3.jar
+END
+swingx-core-1.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/688/trunk/lib/swingx-core-1.6.2.jar
 END
 trident.jar
 K 25
@@ -111,17 +117,17 @@ svn:wc:ra_dav:version-url
 V 56
 /svn/!svn/ver/114/trunk/lib/webdavclient4j-core-0.92.jar
 END
-commons-beanutils-bean-collections-1.8.3.jar
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/!svn/ver/220/trunk/lib/commons-beanutils-bean-collections-1.8.3.jar
-END
 commons-net-ftp-2.0.jar
 K 25
 svn:wc:ra_dav:version-url
 V 51
 /svn/!svn/ver/114/trunk/lib/commons-net-ftp-2.0.jar
+END
+commons-beanutils-bean-collections-1.8.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/220/trunk/lib/commons-beanutils-bean-collections-1.8.3.jar
 END
 commons-httpclient-3.0.1.jar
 K 25
@@ -129,11 +135,11 @@ svn:wc:ra_dav:version-url
 V 56
 /svn/!svn/ver/612/trunk/lib/commons-httpclient-3.0.1.jar
 END
-webdavclient4j-jca-0.92.jar
+looks-2.3.1.jar
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/!svn/ver/114/trunk/lib/webdavclient4j-jca-0.92.jar
+V 43
+/svn/!svn/ver/114/trunk/lib/looks-2.3.1.jar
 END
 jsch-0.1.44m.jar
 K 25
@@ -141,11 +147,11 @@ svn:wc:ra_dav:version-url
 V 44
 /svn/!svn/ver/137/trunk/lib/jsch-0.1.44m.jar
 END
-looks-2.3.1.jar
+webdavclient4j-jca-0.92.jar
 K 25
 svn:wc:ra_dav:version-url
-V 43
-/svn/!svn/ver/114/trunk/lib/looks-2.3.1.jar
+V 55
+/svn/!svn/ver/114/trunk/lib/webdavclient4j-jca-0.92.jar
 END
 commons-codec-1.5.jar
 K 25
@@ -159,29 +165,29 @@ svn:wc:ra_dav:version-url
 V 60
 /svn/!svn/ver/220/trunk/lib/commons-beanutils-core-1.8.3.jar
 END
-commons-lang-2.4.jar
-K 25
-svn:wc:ra_dav:version-url
-V 48
-/svn/!svn/ver/114/trunk/lib/commons-lang-2.4.jar
-END
 commons-logging-1.1.1.jar
 K 25
 svn:wc:ra_dav:version-url
 V 53
 /svn/!svn/ver/114/trunk/lib/commons-logging-1.1.1.jar
 END
-webdavclient4j-cmd-0.92.jar
+commons-lang-2.4.jar
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/!svn/ver/114/trunk/lib/webdavclient4j-cmd-0.92.jar
+V 48
+/svn/!svn/ver/114/trunk/lib/commons-lang-2.4.jar
 END
 commons-logging-adapters-1.1.1.jar
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svn/!svn/ver/114/trunk/lib/commons-logging-adapters-1.1.1.jar
+END
+webdavclient4j-cmd-0.92.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/114/trunk/lib/webdavclient4j-cmd-0.92.jar
 END
 commons-vfs-sandbox-2.0-SNAPSHOT.jar
 K 25

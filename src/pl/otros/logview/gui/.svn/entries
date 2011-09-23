@@ -1,14 +1,14 @@
 10
 
 dir
-680
+688
 http://otroslogviewer.googlecode.com/svn/trunk/src/pl/otros/logview/gui
 http://otroslogviewer.googlecode.com/svn
 
 
 
-2011-09-18T15:34:58.343466Z
-680
+2011-09-22T21:40:46.159512Z
+687
 otros.systems@gmail.com
 
 
@@ -239,10 +239,10 @@ file
 
 
 
-2011-09-22T16:18:04.386679Z
-882e58cccb739f5918fed67d657cd3a2
-2011-09-18T11:28:14.676618Z
-678
+2011-09-23T00:11:35.557336Z
+0ce70a24132d7465a3ac1057af56aecb
+2011-09-22T18:40:51.947978Z
+681
 otros.systems@gmail.com
 has-props
 
@@ -265,7 +265,7 @@ has-props
 
 
 
-9943
+10287
 
 TabHeader.java
 file
@@ -273,7 +273,7 @@ file
 
 
 
-2011-09-22T16:18:04.402304Z
+2011-09-23T00:11:35.572961Z
 0109f7d8f02140bb8c972518f8fac7ad
 2011-07-18T00:06:26.848669Z
 604
@@ -369,40 +369,6 @@ otros.systems@googlemail.com
 
 1827
 
-ColorIcon.java
-file
-
-
-
-
-2011-09-22T16:18:04.449179Z
-6d79e75a7bf02ede1efae92f318cd165
-2011-07-18T00:06:26.848669Z
-604
-otros.systems@googlemail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1779
-
 AllNotesTextAreaObserver.java
 file
 
@@ -436,6 +402,40 @@ has-props
 
 
 1738
+
+ColorIcon.java
+file
+
+
+
+
+2011-09-22T16:18:04.449179Z
+6d79e75a7bf02ede1efae92f318cd165
+2011-07-18T00:06:26.848669Z
+604
+otros.systems@googlemail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1779
 
 StatusObserver.java
 file
@@ -579,10 +579,10 @@ file
 
 
 
-2011-09-22T16:18:04.542928Z
-a9c74008315b99d44c64e492309be32f
-2011-09-18T15:34:58.343466Z
-680
+2011-09-23T00:11:35.635461Z
+efb9122e04d286300320f5774aeba4f7
+2011-09-22T21:19:13.644016Z
+685
 otros.systems@gmail.com
 has-props
 
@@ -605,7 +605,7 @@ has-props
 
 
 
-14084
+14323
 
 MarkableTableModel.java
 file
@@ -715,6 +715,9 @@ otros.systems@googlemail.com
 
 6741
 
+tip
+dir
+
 JAnimatedLogo.java
 file
 
@@ -786,39 +789,8 @@ otros.systems@googlemail.com
 
 2761
 
-LogViewInternalFrame.java
-file
-
-
-
-
-2011-09-22T16:18:04.621053Z
-19ad08d1ff3f469a2e75fc2f8bbed86c
-2011-07-18T00:06:26.848669Z
-604
-otros.systems@googlemail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4235
+markers
+dir
 
 HasIcon.java
 file
@@ -854,8 +826,39 @@ otros.systems@googlemail.com
 
 871
 
-markers
-dir
+LogViewInternalFrame.java
+file
+
+
+
+
+2011-09-22T16:18:04.621053Z
+19ad08d1ff3f469a2e75fc2f8bbed86c
+2011-07-18T00:06:26.848669Z
+604
+otros.systems@googlemail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4235
 
 note
 dir
@@ -900,10 +903,10 @@ file
 
 
 
-2011-09-22T16:18:04.636678Z
-79653562b167cc401a98a8ebb9ff5941
-2011-09-18T11:28:14.676618Z
-678
+2011-09-23T00:11:36.947953Z
+f23e50f7faf5e29dc90a521193015f5e
+2011-09-22T21:40:46.159512Z
+687
 otros.systems@gmail.com
 
 
@@ -926,10 +929,7 @@ otros.systems@gmail.com
 
 
 
-24314
-
-util
-dir
+24684
 
 LogViewPanelWrapper.java
 file
@@ -964,4 +964,7 @@ otros.systems@googlemail.com
 
 
 9223
+
+util
+dir
 

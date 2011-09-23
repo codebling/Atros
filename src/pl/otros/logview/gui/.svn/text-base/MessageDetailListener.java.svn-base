@@ -31,6 +31,8 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyleContext;
 import javax.swing.text.StyledDocument;
 
+import org.apache.commons.lang.StringUtils;
+
 import pl.otros.logview.LogData;
 import pl.otros.logview.Note;
 import pl.otros.logview.gui.message.MessageColorizer;
@@ -63,6 +65,8 @@ public class MessageDetailListener implements ListSelectionListener, NoteObserve
   private final PluginableElementsContainer<MessageColorizer> colorizersContainer;
   private final PluginableElementsContainer<MessageFormatter> formattersContainer;
   private MessageColorizer searchResultMessageColorizer = null;
+
+  private int maximumMessageSize = 200 * 1024;
 
   public MessageDetailListener(JTable table, JTextPane logDetailTextArea, LogDataTableModel dataTableModel, SimpleDateFormat dateFormat,
       PluginableElementsContainer<MessageFormatter> formattersContainer, PluginableElementsContainer<MessageColorizer> colorizersContainer) {
@@ -132,6 +136,11 @@ public class MessageDetailListener implements ListSelectionListener, NoteObserve
           document.insertString(document.getLength(), s1, mainStyle);
           int beforeMessage = document.getLength();
           s1 = ld.getMessage();
+          if (s1.length() > maximumMessageSize) {
+            int removedCharsSize = s1.length() - maximumMessageSize;
+            s1 = StringUtils.left(s1, maximumMessageSize) + String.format("%n...%n...(+%,d chars)", removedCharsSize);
+          }
+
           for (MessageFormatter messageFormatter : formatters) {
             ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
             try {

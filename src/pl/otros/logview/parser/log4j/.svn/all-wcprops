@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/!svn/ver/672/trunk/src/pl/otros/logview/parser/log4j
+/svn/!svn/ver/685/trunk/src/pl/otros/logview/parser/log4j
 END
 Log4jPatternMultilineLogParser.java
 K 25
@@ -19,5 +19,5 @@ Log4jUtil.java
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/!svn/ver/672/trunk/src/pl/otros/logview/parser/log4j/Log4jUtil.java
+/svn/!svn/ver/685/trunk/src/pl/otros/logview/parser/log4j/Log4jUtil.java
 END

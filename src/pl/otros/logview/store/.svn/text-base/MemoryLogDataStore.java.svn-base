@@ -27,7 +27,7 @@ public class MemoryLogDataStore extends AbstractMemoryLogStore implements LogDat
 
   private static final Logger LOGGER = Logger.getLogger(MemoryLogDataStore.class.getName());
 
-  ArrayList<LogData> list;
+  protected ArrayList<LogData> list;
 
   public MemoryLogDataStore() {
     list = new ArrayList<LogData>();

@@ -1,15 +1,15 @@
 10
 
 dir
-680
+688
 http://otroslogviewer.googlecode.com/svn/trunk/src/pl/otros/logview/gui/message
 http://otroslogviewer.googlecode.com/svn
 
 
 
-2011-07-20T22:40:13.520078Z
-611
-otros.systems@googlemail.com
+2011-09-22T18:45:01.818475Z
+683
+otros.systems@gmail.com
 
 
 
@@ -137,11 +137,11 @@ file
 
 
 
-2011-09-22T16:17:59.917958Z
-f3e0075f9fb3f7d70e7b931b17aa08fe
-2011-07-18T00:06:26.848669Z
-604
-otros.systems@googlemail.com
+2011-09-23T00:11:35.526087Z
+761e00620f1623d8036a486fb8f674af
+2011-09-22T18:45:01.818475Z
+683
+otros.systems@gmail.com
 
 
 
@@ -163,7 +163,7 @@ otros.systems@googlemail.com
 
 
 
-3781
+3921
 
 StackTraceFinder.java
 file

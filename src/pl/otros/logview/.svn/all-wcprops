@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/!svn/ver/680/trunk/src/pl/otros/logview
+/svn/!svn/ver/687/trunk/src/pl/otros/logview
 END
 LogDataCollector.java
 K 25
@@ -49,7 +49,7 @@ LogData.java
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/!svn/ver/678/trunk/src/pl/otros/logview/LogData.java
+/svn/!svn/ver/685/trunk/src/pl/otros/logview/LogData.java
 END
 BufferingLogDataCollectorProxy.java
 K 25

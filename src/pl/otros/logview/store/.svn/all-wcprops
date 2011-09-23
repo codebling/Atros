@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/!svn/ver/678/trunk/src/pl/otros/logview/store
+/svn/!svn/ver/682/trunk/src/pl/otros/logview/store
 END
 MemoryLogDataStore.java
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/!svn/ver/678/trunk/src/pl/otros/logview/store/MemoryLogDataStore.java
+/svn/!svn/ver/682/trunk/src/pl/otros/logview/store/MemoryLogDataStore.java
 END
 CachedLogStore.java
 K 25

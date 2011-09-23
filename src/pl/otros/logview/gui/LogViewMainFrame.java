@@ -103,6 +103,7 @@ import pl.otros.logview.gui.actions.search.SearchFieldKeyListener;
 import pl.otros.logview.gui.message.MessageColorizer;
 import pl.otros.logview.gui.message.SearchResultColorizer;
 import pl.otros.logview.gui.renderers.MarkerColorsComboBoxRenderer;
+import pl.otros.logview.gui.tip.TipOfTheDay;
 import pl.otros.logview.gui.util.DocumentInsertUpdateHandler;
 import pl.otros.logview.importer.InitializationException;
 import pl.otros.logview.importer.LogImporter;
@@ -195,9 +196,11 @@ public class LogViewMainFrame extends JFrame {
 
             @Override
             public void componentResized(ComponentEvent e) {
-              c.setProperty("gui.width", mf.getWidth());
-              c.setProperty("gui.height", mf.getHeight());
               c.setProperty("gui.state", mf.getExtendedState());
+              if (mf.getExtendedState() == Frame.NORMAL) {
+                c.setProperty("gui.width", mf.getWidth());
+                c.setProperty("gui.height", mf.getHeight());
+              }
             }
 
             @Override
@@ -315,6 +318,7 @@ public class LogViewMainFrame extends JFrame {
     initPosition();
     OtrosSplash.hide();
     setVisible(true);
+    new TipOfTheDay(c).showTipOfTheDayIfNotDisabled(this);
   }
 
   private void initToolbar() {

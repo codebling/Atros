@@ -50,6 +50,9 @@ public class Log4jUtil {
     ld.setLevel(parseLevel(event.getLevel().toString()));
     ld.setClazz(event.getLocationInformation().getClassName());
     ld.setMethod(event.getLocationInformation().getMethodName());
+    ld.setFile(event.getLocationInformation().getFileName());
+    ld.setLine(event.getLocationInformation().getLineNumber());
+    ld.setNDC(event.getNDC());
     ld.setThread(event.getThreadName());
     ld.setLoggerName(event.getLoggerName());
 

@@ -1,14 +1,14 @@
 10
 
 dir
-680
+688
 http://otroslogviewer.googlecode.com/svn/trunk/src/pl/otros/logview/store
 http://otroslogviewer.googlecode.com/svn
 
 
 
-2011-09-18T11:28:14.676618Z
-678
+2011-09-22T18:44:00.778170Z
+682
 otros.systems@gmail.com
 
 
@@ -35,10 +35,10 @@ file
 
 
 
-2011-09-22T16:18:05.355423Z
-d168d7b8c5e8cf0173ddfa1c4937a5b4
-2011-09-18T11:28:14.676618Z
-678
+2011-09-22T22:03:18.325349Z
+3522215c34c34433f4b5052680cd9063
+2011-09-22T18:44:00.778170Z
+682
 otros.systems@gmail.com
 
 
@@ -61,7 +61,7 @@ otros.systems@gmail.com
 
 
 
-2658
+2668
 
 CachedLogStore.java
 file

@@ -72,7 +72,7 @@ public class SoapMessageFormatter implements MessageFormatter {
     return sb.toString();
   }
 
-  public String prettyFormat(String input, int indent) {
+  public String prettyFormat(String input, int indent, boolean omitXmlDeclaration) {
     try {
       Source xmlInput = new StreamSource(new StringReader(input));
       StringWriter stringWriter = new StringWriter();
@@ -80,6 +80,7 @@ public class SoapMessageFormatter implements MessageFormatter {
       Transformer transformer = TransformerFactory.newInstance().newTransformer();
       transformer.setOutputProperty(OutputKeys.INDENT, "yes");
       transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", String.valueOf(indent));
+      transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, omitXmlDeclaration ? "yes" : "no");
       transformer.transform(xmlInput, xmlOutput);
       return xmlOutput.getWriter().toString();
     } catch (Exception e) {
@@ -89,7 +90,7 @@ public class SoapMessageFormatter implements MessageFormatter {
   }
 
   public String prettyFormat(String input) {
-    return prettyFormat(input, formattIndend);
+    return prettyFormat(input, formattIndend, false);
   }
 
   @Override

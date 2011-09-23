@@ -1,14 +1,14 @@
 10
 
 dir
-680
+688
 http://otroslogviewer.googlecode.com/svn/trunk/src/pl/otros/logview
 http://otroslogviewer.googlecode.com/svn
 
 
 
-2011-09-18T15:34:58.343466Z
-680
+2011-09-22T21:40:46.159512Z
+687
 otros.systems@gmail.com
 
 
@@ -106,9 +106,6 @@ otros.systems@googlemail.com
 gui
 dir
 
-filter
-dir
-
 Note.java
 file
 
@@ -143,16 +140,19 @@ otros.systems@gmail.com
 
 1164
 
+filter
+dir
+
 LogData.java
 file
 
 
 
 
-2011-09-22T16:18:06.902288Z
-9a790c9f8d9c40ede6da65d50ae6ef5b
-2011-09-18T11:28:14.676618Z
-678
+2011-09-23T00:11:37.010452Z
+9a1068f3f970924aaf2da530ec1f09b1
+2011-09-22T21:19:13.644016Z
+685
 otros.systems@gmail.com
 has-props
 
@@ -175,12 +175,12 @@ has-props
 
 
 
-5878
-
-parser
-dir
+6769
 
 store
+dir
+
+parser
 dir
 
 BufferingLogDataCollectorProxy.java
@@ -260,9 +260,6 @@ dir
 importer
 dir
 
-reader
-dir
-
 LogDataCollector.java
 file
 
@@ -330,6 +327,9 @@ otros.systems@gmail.com
 
 
 1693
+
+reader
+dir
 
 VersionUtil.java
 file

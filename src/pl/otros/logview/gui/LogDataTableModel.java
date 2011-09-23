@@ -61,6 +61,8 @@ public class LogDataTableModel extends AbstractTableModel implements LogDataColl
   private MarkerColors markerColors = MarkerColors.Aqua;
   private LogDataStore logDataStore;
 
+  private int maximumMessageLength = 2000;
+
   public String getColumnName(int column) {
     return TableColumns.getColumnById(column).getName();
   }
@@ -80,7 +82,6 @@ public class LogDataTableModel extends AbstractTableModel implements LogDataColl
       logDataStore = new MemoryLogDataStore();
     }
     logDataStore = new SynchronizedLogDataStore(logDataStore);
-    logDataStore.setLimit(200);
 
     EMPTY_LOG_DATA.setId(Integer.MAX_VALUE);
     EMPTY_LOG_DATA.setDate(new Date(0));
@@ -122,7 +123,7 @@ public class LogDataTableModel extends AbstractTableModel implements LogDataColl
         result = ld.getClazz();
         break;
       case METHOD:
-        result = ld.getMethod();
+        result = StringUtils.left(ld.getMethod(), maximumMessageLength);
         break;
       case THREAD:
         result = ld.getThread();
