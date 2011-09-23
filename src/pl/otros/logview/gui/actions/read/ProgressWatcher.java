@@ -22,7 +22,7 @@ import java.text.NumberFormat;
 import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 import pl.otros.logview.gui.LogImportStats;
 import pl.otros.logview.gui.LogViewPanelWrapper;

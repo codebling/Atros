@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 
 import javax.swing.SwingUtilities;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 import pl.otros.logview.gui.LogDataTableModel;
 import pl.otros.logview.gui.LogImportStats;

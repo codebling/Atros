@@ -17,7 +17,7 @@ package examples;
 
 import java.util.logging.Level;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 import pl.otros.logview.LogData;
 import pl.otros.logview.batch.BatchProcessingContext;
