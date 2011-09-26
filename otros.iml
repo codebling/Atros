@@ -50,6 +50,7 @@
       <sourceFolder url="file://$MODULE_DIR$/test/src" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/resources" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
@@ -362,9 +363,10 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
-      <library name="VFSJFileChooser-0.0.3m.jar">
+      <library name="VFSJFileChooser">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/VFSJFileChooser-0.0.3m.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/VFSJFileChooser-0.0.5-olv.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
