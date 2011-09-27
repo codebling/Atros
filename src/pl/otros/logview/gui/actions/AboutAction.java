@@ -119,8 +119,7 @@ public class AboutAction extends AbstractAction {
     sd.insertString(sd.getLength(), "  * commons-logging-adapters-1.1.1.jar \n", poweredByStyle);
     sd.insertString(sd.getLength(), "  * commons-net-2.0.jar \n", poweredByStyle);
     sd.insertString(sd.getLength(), "  * commons-net-ftp-2.0.jar \n", poweredByStyle);
-    sd.insertString(sd.getLength(), "  * commons-vfs-2.0-SNAPSHOT.jar \n", poweredByStyle);
-    sd.insertString(sd.getLength(), "  * commons-vfs-sandbox-2.0-SNAPSHOT.jar \n", poweredByStyle);
+    sd.insertString(sd.getLength(), "  * commons-vfs2-2.1-SNAPSHOT.jar \n", poweredByStyle);
     sd.insertString(sd.getLength(), "  * jakarta-oro-2.0.8.jar \n", poweredByStyle);
     sd.insertString(sd.getLength(), "  * jcifs-1.3.14.jar \n", poweredByStyle);
     sd.insertString(sd.getLength(), "  * jcommander-1.13.jar \n", poweredByStyle);
@@ -131,11 +130,7 @@ public class AboutAction extends AbstractAction {
     sd.insertString(sd.getLength(), "  * looks-2.3.1.jar \n", poweredByStyle);
     sd.insertString(sd.getLength(), "  * miglayout-3.7.3.1-swing.jar \n", poweredByStyle);
     sd.insertString(sd.getLength(), "  * trident.jar \n", poweredByStyle);
-    sd.insertString(sd.getLength(), "  * VFSJFileChooser-0.0.3m.jar \n", poweredByStyle);
-    sd.insertString(sd.getLength(), "  * webdavclient4j-cmd-0.92.jar \n", poweredByStyle);
-    sd.insertString(sd.getLength(), "  * webdavclient4j-core-0.92.jar \n", poweredByStyle);
-    sd.insertString(sd.getLength(), "  * webdavclient4j-jca-0.92.jar \n", poweredByStyle);
-    sd.insertString(sd.getLength(), "  * webdavclient4j-vfs-0.92.jar \n", poweredByStyle);
+    sd.insertString(sd.getLength(), "  * VFSJFileChooser-0.0.5-olv.jar \n", poweredByStyle);
 
     sd.insertString(sd.getLength(), "License: Apache Commons 2.0", licenceStyle);
 
