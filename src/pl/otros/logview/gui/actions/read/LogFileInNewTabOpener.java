@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 import pl.otros.logview.gui.Icons;
 import pl.otros.logview.gui.LogViewPanelWrapper;

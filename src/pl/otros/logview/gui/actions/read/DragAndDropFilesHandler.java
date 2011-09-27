@@ -32,9 +32,9 @@ import javax.swing.JTabbedPane;
 import javax.swing.TransferHandler;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileSystemException;
-import org.apache.commons.vfs.VFS;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemException;
+import org.apache.commons.vfs2.VFS;
 
 import pl.otros.logview.gui.StatusObserver;
 import pl.otros.logview.importer.LogImporter;
