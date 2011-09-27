@@ -368,7 +368,6 @@
     <orderEntry type="module-library" exported="">
       <library name="VFSJFileChooser">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/VFSJFileChooser-0.0.3m.jar!/" />
           <root url="jar://$MODULE_DIR$/lib/VFSJFileChooser-0.0.5-olv.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -376,6 +375,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="swingx-core" level="project" />
+    <orderEntry type="library" name="VFS2" level="project" />
   </component>
 </module>
 
