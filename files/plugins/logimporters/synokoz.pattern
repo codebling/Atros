@@ -1,0 +1,6 @@
+customLevels=WARNING=WARN,ALWAYS=INFO
+type=log4j
+pattern=TIMESTAMP LEVEL [THREAD] (CLASS) (FILE:LINE) MESSAGE
+dateFormat=yyyy-MM-dd HH:mm:ss,SSS
+name=NMP pattern
+charset=windows-1252
