@@ -17,7 +17,7 @@ package pl.otros.logview.io;
 
 import java.io.InputStream;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 public class LoadingInfo {
 

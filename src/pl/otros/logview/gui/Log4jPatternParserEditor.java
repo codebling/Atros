@@ -49,8 +49,8 @@ import net.sf.vfsjfilechooser.VFSJFileChooser;
 import net.sf.vfsjfilechooser.VFSJFileChooser.RETURN_TYPE;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.VFS;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.VFS;
 
 import pl.otros.logview.importer.InitializationException;
 import pl.otros.logview.importer.LogImporterUsingParser;

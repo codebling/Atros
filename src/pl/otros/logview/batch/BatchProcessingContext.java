@@ -18,7 +18,7 @@ package pl.otros.logview.batch;
 import java.util.HashMap;
 import java.util.List;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 public class BatchProcessingContext {
 

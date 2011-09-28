@@ -27,7 +27,7 @@ import net.sf.vfsjfilechooser.VFSJFileChooser.RETURN_TYPE;
 import net.sf.vfsjfilechooser.VFSJFileChooser.SELECTION_MODE;
 import net.sf.vfsjfilechooser.accessories.DefaultAccessoriesPanel;
 
-import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs2.FileObject;
 
 import pl.otros.logview.gui.StatusObserver;
 
