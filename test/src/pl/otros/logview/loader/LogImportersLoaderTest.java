@@ -16,8 +16,10 @@
 package pl.otros.logview.loader;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.util.Collection;
 
+import org.apache.commons.io.filefilter.SuffixFileFilter;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -28,7 +30,9 @@ public class LogImportersLoaderTest {
   @Test
   public void testLoadPropertyFileBased() {
     LogImportersLoader importersLoader = new LogImportersLoader();
-    Collection<LogImporter> loadPropertyFileBased = importersLoader.loadPropertyPatternFileFromDir(new File("./files/plugins/logimporters"));
-    Assert.assertEquals(2, loadPropertyFileBased.size());
+    File pluginDir = new File("./files/plugins/logimporters");
+    Collection<LogImporter> loadPropertyFileBased = importersLoader.loadPropertyPatternFileFromDir(pluginDir);
+    Assert.assertEquals(pluginDir.listFiles((FileFilter) new SuffixFileFilter("pattern")).length,
+        loadPropertyFileBased.size());
   }
 }
