@@ -112,4 +112,13 @@ public class MarkAllFoundAction extends AbstractAction implements ConfigurationL
   public void keyReleased(KeyEvent e) {
 
   }
+
+  public MarkerColors getMarkerColors() {
+    return markerColors;
+  }
+
+  public void setMarkerColors(MarkerColors markerColors) {
+    this.markerColors = markerColors;
+  }
+
 }

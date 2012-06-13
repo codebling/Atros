@@ -361,7 +361,7 @@ public class LogViewMainFrame extends JFrame {
 
     final JCheckBox markFound = new JCheckBox("Mark search result");
     markFound.setMnemonic(KeyEvent.VK_M);
-    MarkAllFoundAction markAllFoundAction = new MarkAllFoundAction(observer, logsTabbedPane, searchField);
+    final MarkAllFoundAction markAllFoundAction = new MarkAllFoundAction(observer, logsTabbedPane, searchField);
     searchField.addKeyListener(markAllFoundAction);
     c.addConfigurationListener(markAllFoundAction);
     JButton markAllFoundButton = new JButton(markAllFoundAction);
@@ -387,6 +387,7 @@ public class LogViewMainFrame extends JFrame {
         MarkerColors markerColors = (MarkerColors) markColor.getSelectedItem();
         searchActionForward.setMarkerColors(markerColors);
         searchActionBackward.setMarkerColors(markerColors);
+        markAllFoundAction.setMarkerColors(markerColors);
         c.setProperty("gui.markColor", markColor.getSelectedItem());
       }
     });
