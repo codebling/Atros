@@ -30,6 +30,7 @@ import javax.swing.text.StyledDocument;
 
 import pl.otros.logview.MarkerColors;
 import pl.otros.logview.gui.Icons;
+import pl.otros.logview.gui.LogViewMainFrame;
 import pl.otros.logview.gui.LogViewPanelWrapper;
 import pl.otros.logview.gui.StatusObserver;
 
@@ -56,7 +57,6 @@ public class SearchAction extends AbstractAction {
   private JTabbedPane jTabbedPane;
   private JTextField searchStringField;
   private SearchEngine searchEngine;
-  private MarkerColors markerColors = MarkerColors.Aqua;
   private final SearchDirection searchDirection;
 
   public SearchAction(StatusObserver statusObserver, JTabbedPane jTabbedPane, SearchDirection searchDirection) {
@@ -115,7 +115,7 @@ public class SearchAction extends AbstractAction {
       table.setRowSelectionInterval(row, row);
       statusObserver.updateStatus(String.format("Found at row %d", row), StatusObserver.LEVEL_NORMAL);
       if (markFound) {
-        lvPanel.getDataTableModel().markRows(markerColors, table.convertRowIndexToModel(row));
+        lvPanel.getDataTableModel().markRows(LogViewMainFrame.getInstance().getMarkerColors(), table.convertRowIndexToModel(row));
       }
 
       scrollToSearchResult(searchMatcher.getFoundTextFragments(lvPanel.getDataTableModel().getLogData(table.convertRowIndexToModel(row))), lvPanel
@@ -153,14 +153,6 @@ public class SearchAction extends AbstractAction {
 
   public void setMarkFound(boolean markFound) {
     this.markFound = markFound;
-  }
-
-  public MarkerColors getMarkerColors() {
-    return markerColors;
-  }
-
-  public void setMarkerColors(MarkerColors markerColors) {
-    this.markerColors = markerColors;
   }
 
   public void setSearchMode(SearchMode searchMode) {

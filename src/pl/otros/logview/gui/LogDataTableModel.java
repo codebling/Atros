@@ -58,7 +58,6 @@ public class LogDataTableModel extends AbstractTableModel implements LogDataColl
 
   private static final Note EMPTY_NOTE = new Note("");
   private Set<NoteObserver> noteObservers;
-  private MarkerColors markerColors = MarkerColors.Aqua;
   private LogDataStore logDataStore;
 
   private int maximumMessageLength = 2000;
@@ -278,7 +277,7 @@ public class LogDataTableModel extends AbstractTableModel implements LogDataColl
     if (columnIndex == TableColumns.MARK.getColumn()) {
       Boolean marked = (Boolean) value;
       if (marked.booleanValue()) {
-        logDataStore.markRows(markerColors, rowIndex);
+        logDataStore.markRows(LogViewMainFrame.getInstance().getMarkerColors(), rowIndex);
       } else {
         logDataStore.unmarkRows(rowIndex);
       }

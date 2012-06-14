@@ -120,16 +120,18 @@ public class LogViewMainFrame extends JFrame {
 
   private static final String CARD_LAYOUT_EMPTY = "cardLayoutEmpty";
 
+  private static LogViewMainFrame instance;
+
   private JToolBar toolBar;
 
   private LogImporter[] importers = new LogImporter[0];
   private JButton buttonSearch;
+  private JComboBox markColor;
   private JLabelStatusObserver observer;
   private JTabbedPane logsTabbedPane;
   private EnableDisableComponetsForTabs enableDisableComponetsForTabs;
   private CardLayout cardLayout;
   private JPanel cardLayoutPanel;
-
   private JTextField searchField;
 
   private AllPluginables allPluginables;
@@ -207,6 +209,7 @@ public class LogViewMainFrame extends JFrame {
 
           });
           mf.addWindowListener(new ExitAction(mf));
+          instance = mf;
         } catch (InitializationException e) {
           LOGGER.severe("Cannot initialize main frame");
         }
@@ -316,6 +319,10 @@ public class LogViewMainFrame extends JFrame {
     new TipOfTheDay().showTipOfTheDayIfNotDisabled(this);
   }
 
+  public static LogViewMainFrame getInstance() {
+    return instance;
+  }
+
   private void initToolbar() {
     toolBar = new JToolBar();
 
@@ -363,10 +370,9 @@ public class LogViewMainFrame extends JFrame {
     markFound.setMnemonic(KeyEvent.VK_M);
     final MarkAllFoundAction markAllFoundAction = new MarkAllFoundAction(observer, logsTabbedPane, searchField);
     searchField.addKeyListener(markAllFoundAction);
-    c.addConfigurationListener(markAllFoundAction);
     JButton markAllFoundButton = new JButton(markAllFoundAction);
 
-    final JComboBox markColor = new JComboBox(MarkerColors.values());
+    markColor = new JComboBox(MarkerColors.values());
     markFound.setSelected(c.getBoolean("gui.markFound", true));
     markFound.addChangeListener(new ChangeListener() {
 
@@ -384,10 +390,6 @@ public class LogViewMainFrame extends JFrame {
 
       @Override
       public void actionPerformed(ActionEvent e) {
-        MarkerColors markerColors = (MarkerColors) markColor.getSelectedItem();
-        searchActionForward.setMarkerColors(markerColors);
-        searchActionBackward.setMarkerColors(markerColors);
-        markAllFoundAction.setMarkerColors(markerColors);
         c.setProperty("gui.markColor", markColor.getSelectedItem());
       }
     });
@@ -560,6 +562,10 @@ public class LogViewMainFrame extends JFrame {
     this.setSize(size);
     this.setLocation(location);
     this.setExtendedState(state);
+  }
+
+  public MarkerColors getMarkerColors() {
+    return (MarkerColors) markColor.getSelectedItem();
   }
 
 }

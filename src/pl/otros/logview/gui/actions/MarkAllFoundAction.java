@@ -30,17 +30,13 @@ import org.apache.commons.configuration.event.ConfigurationEvent;
 import org.apache.commons.configuration.event.ConfigurationListener;
 
 import pl.otros.logview.MarkerColors;
-import pl.otros.logview.gui.Icons;
-import pl.otros.logview.gui.LogDataTableModel;
-import pl.otros.logview.gui.LogViewPanelWrapper;
-import pl.otros.logview.gui.StatusObserver;
+import pl.otros.logview.gui.*;
 
-public class MarkAllFoundAction extends AbstractAction implements ConfigurationListener, KeyListener {
+public class MarkAllFoundAction extends AbstractAction implements KeyListener {
 
   private StatusObserver statusObserver;
   private JTabbedPane jTabbedPane;
   private JTextField searchField;
-  private MarkerColors markerColors = MarkerColors.Aqua;
 
   public MarkAllFoundAction(StatusObserver statusObserver, JTabbedPane jTabbedPane, JTextField searchField) {
     super();
@@ -60,7 +56,7 @@ public class MarkAllFoundAction extends AbstractAction implements ConfigurationL
     }
     JTable table = lvFrame.getLogViewPanel().getTable();
     LogDataTableModel model = lvFrame.getDataTableModel();
-    int marked = markAllFound(table, model, searchField.getText(), markerColors);
+    int marked = markAllFound(table, model, searchField.getText(), LogViewMainFrame.getInstance().getMarkerColors());
     statusObserver.updateStatus(marked + " messages marked for string \"" + searchField.getText() + "\"");
   }
 
@@ -89,13 +85,6 @@ public class MarkAllFoundAction extends AbstractAction implements ConfigurationL
   }
 
   @Override
-  public void configurationChanged(ConfigurationEvent e) {
-    if (e.getPropertyName().equalsIgnoreCase("gui.markColor")) {
-      markerColors = (MarkerColors) e.getPropertyValue();
-    }
-  }
-
-  @Override
   public void keyTyped(KeyEvent e) {
 
   }
@@ -112,13 +101,4 @@ public class MarkAllFoundAction extends AbstractAction implements ConfigurationL
   public void keyReleased(KeyEvent e) {
 
   }
-
-  public MarkerColors getMarkerColors() {
-    return markerColors;
-  }
-
-  public void setMarkerColors(MarkerColors markerColors) {
-    this.markerColors = markerColors;
-  }
-
 }
